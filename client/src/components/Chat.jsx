@@ -11,7 +11,7 @@ const Chat = ({ name, room }) => {
   const [message, setMessage] = React.useState('');
   const [messages, setMessages] = React.useState([]);
 
-  const ENDPOINT_WS = "localhost:5000";
+  const ENDPOINT_WS = "https://chatify-backend-api.onrender.com/";
 
   React.useEffect(() => {
     socket = io(ENDPOINT_WS);
